@@ -148,7 +148,6 @@ public class MainActivity extends Activity implements View.OnTouchListener, OnIt
 
         @Override
         public void onStopTrackingTouch(SeekBar seekBar) {
-
         }
     });
 
@@ -274,6 +273,7 @@ public class MainActivity extends Activity implements View.OnTouchListener, OnIt
             case("Reset the picture"):
                 originalBitmap = bmp.copy(Bitmap.Config.ARGB_8888, true);
                 imageView1.setImageBitmap(originalBitmap);
+                imageView1.setColorFilter(Effects.setBrightness(100));
                 Toast.makeText(parent.getContext(), "the picture has been reset", Toast.LENGTH_LONG).show();
                 break;
 

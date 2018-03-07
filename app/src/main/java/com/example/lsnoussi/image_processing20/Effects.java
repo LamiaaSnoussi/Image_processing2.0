@@ -273,7 +273,7 @@ public class Effects {
     }
 
     /**
-     * function that creates noise effect
+     * function that creates noise effect which is a variation of brightness
      * @author https://xjaphx.wordpress.com/2011/10/30/image-processing-flea-noise-effect/
      * @param bmp
      */
