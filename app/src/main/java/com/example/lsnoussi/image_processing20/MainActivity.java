@@ -426,14 +426,14 @@ public class MainActivity extends Activity implements View.OnTouchListener, OnIt
                 imageView1.setImageBitmap(bmp);
 
 
-            } else if (requestCode == CAMERA_REQUEST) {
+            } else if (requestCode == Take_Picture) { //from camera
                 String filePath = Camera_PicturePath;
                 if (filePath != null) {
 
                     bmp = (new_decode(new File(filePath)));
 
                     // Resize the image
-                    int newHeight = (int) (bmp.getHeight() * (512.0 / bmp.getWidth()));
+                    int newHeight = (int) (bmp.getHeight() * (512/ bmp.getWidth()));
                     Bitmap putImage = Bitmap.createScaledBitmap(bmp, 512, newHeight, true);
 
                     // Saving the image in bmp_final
