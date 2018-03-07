@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dip"
+    android:weightSum="1">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="10dip"
+        android:layout_weight="0.73"
+        android:fontFamily="serif-monospace"
+        android:text="Traitement Images:"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:drawSelectorOnTop="true"
+        android:spinnerMode="dropdown"
+        />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="276dp"
+        app:srcCompat="@drawable/test" />
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        style="@android:style/Widget.DeviceDefault.Light.SeekBar"
+        android:layout_width="362dp"
+        android:layout_height="wrap_content"
+        android:max="255"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0.73"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_gallery"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="serif-monospace"
+            android:text="gallery"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_blue_light"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button_camera"
+            style="@android:style/Widget.DeviceDefault.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:fontFamily="serif-monospace"
+            android:text="camera"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_blue_dark"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="end"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_quit"
+            style="@android:style/Widget.DeviceDefault.Button.Borderless"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/darker_gray"
+            android:fontFamily="serif-monospace"
+            android:text="Quit"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <Button
+            android:id="@+id/button_save"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="serif-monospace"
+            android:text="save"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
